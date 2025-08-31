@@ -1,0 +1,169 @@
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #e4bf67, #10233e);
+    color: white;
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: flex-start; 
+    flex-direction: column;
+    min-height: 100vh; /* Ensure it takes full viewport height */
+    text-align: center;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* How this works section */
+.how-it-works {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    padding: 40px;
+    width: 80%;
+    max-width: 1000px;
+    color: white;
+    margin-top: 40px;
+    text-align: center;
+    margin-left: auto; /* Center horizontally */
+    margin-right: auto; /* Center horizontally */
+}
+
+/* Footer */
+footer {
+    margin-top: 30px;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+}
+
+footer p {
+    margin: 20px auto;
+    max-width: 1000px;
+}
+
+/* Pricing Container */
+.pricing-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+    padding: 40px;
+    flex-wrap: wrap;
+    width: 100%; /* Full width of the screen */
+    box-sizing: border-box;
+}
+
+/* Pricing Box Styles */
+.pricing-box {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    padding: 40px;
+    color: white;
+    width: 400px;
+    height: 700px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+    text-align: center;
+    margin: 20px;
+}
+
+.pricing-box h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.pricing-box p {
+    font-size: 36px;
+    margin-bottom: 25px;
+}
+
+.pricing-box ul {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+.pricing-box ul li {
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.pricing-box:hover {
+  transform: scale(1.02);
+}
+
+.purchase-btn {
+    background-color: #e4bf67;
+    color: black;
+    padding: 20px;
+    border: none;
+    border-radius: 12px;
+    font-size: 30px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+    margin-top: auto;
+}
+
+.purchase-btn:hover {
+    background-color: #10233e;
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 768px) {
+    /* Body Adjustments for Scrolling */
+    body {
+        height: auto; /* Allow scrolling */
+        padding: 0;
+        display: block; /* Change to block-level layout */
+    }
+
+    /* Allow Container to Scroll */
+    .pricing-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        gap: 20px;
+        overflow-y: auto; /* Enable vertical scrolling */
+        max-height: 100vh; /* Restrict to the height of the screen */
+    }
+
+    /* Pricing Box Adjustments */
+    .pricing-box {
+        width: 90%; /* Pricing boxes take up most of the width */
+        height: auto; /* Auto height for smaller screens */
+        padding: 20px;
+        margin-bottom: 20px; /* Add spacing between boxes */
+    }
+
+    .pricing-box h2 {
+        font-size: 28px; /* Adjust font size for mobile */
+    }
+
+    .pricing-box p {
+        font-size: 24px; /* Adjust font size for mobile */
+    }
+
+    .pricing-box ul li {
+        font-size: 18px; /* Adjust list item font size */
+    }
+
+    .purchase-btn {
+        font-size: 24px; /* Adjust button font size for mobile */
+        padding: 15px; /* Adjust padding for mobile */
+    }
+
+    /* How it works Section Adjustments */
+    .how-it-works {
+        padding: 30px;
+        width: 90%; /* Make this section fit better */
+        margin: 0 auto; /* Ensure horizontal centering */
+    }
+
+    .how-it-works h3 {
+        font-size: 28px;
+    }
+
+    .how-it-works p {
+        font-size: 16px;
+    }
+}
